@@ -1,0 +1,52 @@
+{
+  "agents": [
+    "double_dqn",
+    "rnd_dqn",
+    "bootstrap_dqn"
+  ],
+  "env_kind": "deepsea",
+  "sizes": [
+    15
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    42
+  ],
+  "total_steps": 20000,
+  "config": {
+    "agents": [
+      "double_dqn",
+      "rnd_dqn",
+      "bootstrap_dqn"
+    ],
+    "env_kind": "deepsea",
+    "sizes": [
+      15
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      42
+    ],
+    "total_steps": 20000,
+    "results_dir": "results/noisy",
+    "device": "cpu",
+    "snapshot_every": null,
+    "workers": 4,
+    "overrides": {
+      "num_heads": 5,
+      "prior_scale": 3.0,
+      "mask_prob": 0.5,
+      "intrinsic_coef": 1.0,
+      "rnd_output_dim": 64,
+      "ds_noise_dim": 15,
+      "ds_noise_columns": [
+        0
+      ]
+    }
+  },
+  "elapsed_seconds": 1518.8190801143646
+}
